@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>__SERVER__</title>
+    <link rel="stylesheet" type="text/css" href="static/Main.css"/>
+    <script type="text/javascript" src="static/jquery-latest.min.js"></script>
+    <script src="scripts/Main.js"></script>
+</head>
+<body onload="refresh_table(); load_options()">
+    <div align="center">
+        <p>Trading market</p>
+        <table id="table"></table>
+        <button type="button" onclick="refresh_table()">Update</button>
+    </div>
+
+    <div class="divs">
+        <button type="button" onclick="load_profit()">Find profit exchanges</button>
+        <p id="profit"></p>
+    </div>
+
+    <div class="divs">
+        <input type="text" id="new_curr_name">
+        <button type="button" onclick="add_currency()">Add currency</button>
+    </div>
+
+    <div class="divs">
+        <select id="option_from"></select>
+        <select id="option_to"></select>
+        <input type="text" id="new_rate">
+        <button type="button" onclick="change_rate()">Change rate</button>
+    </div>
+
+
+</body>
+</html>
