@@ -1,5 +1,3 @@
-__author__ = 'oleh'
-
 import copy
 import csv
 
