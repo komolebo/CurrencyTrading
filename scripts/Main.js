@@ -34,6 +34,7 @@ function load_options() {
 }
 
 function load_profit() {
+    $('#profit').html('Counting...');
     $.get('/sequence', function(data){
         $('#profit').html(data);
     })
