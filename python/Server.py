@@ -1,5 +1,4 @@
 from Functions import read, find_profit
-
 from bottle import get, static_file, run, post, put
 
 matrix = []      # trading table
